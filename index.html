@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Comment monter son propre PC</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cheatsheet.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
+  <div class="container-fluid d-flex align-items-center">
+    <h1 class="d-flex align-items-center fs-4 text-white mb-0">
+      
+      La ruche de la technologie
+    </h1>
+    
+  </div>
+</header>
+<aside class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2">
+  <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">Table des matières</h2>
+  <nav class="small" id="toc">
+    <ul class="list-unstyled">
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">En construction
+      </button>
+        <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#typography">Typography</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#images">Images</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#tables">Tables</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#figures">Figures</a></li>
+        </ul>
+      </li>
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">En construction</button>
+        <ul class="list-unstyled ps-3 collapse" id="forms-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#overview">Overview</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#disabled-forms">Disabled forms</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#sizing">Sizing</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#input-group">Input group</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#floating-labels">Floating labels</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#validation">Validation</a></li>
+        </ul>
+      </li>
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">En construction</button>
+        <ul class="list-unstyled ps-3 collapse" id="components-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#accordion">Accordion</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#alerts">Alerts</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#badge">Badge</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#breadcrumb">Breadcrumb</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#buttons">Buttons</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#button-group">Button group</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#card">Card</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#carousel">Carousel</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#dropdowns">Dropdowns</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#list-group">List group</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#modal">Modal</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#navs">Navs</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#navbar">Navbar</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#pagination">Pagination</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#popovers">Popovers</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#progress">Progress</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#scrollspy">Scrollspy</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#spinners">Spinners</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#toasts">Toasts</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#tooltips">Tooltips</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<div class="bd-cheatsheet container-fluid bg-body">
+  <section id="content">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Menu principal</h2>
+
+    <article class="my-3" id="typography">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Autres guides</h3>
+        <a class="d-flex align-items-center" href="../content/typography/">En construction</a>
+      </div>
+<style>
+  
+</style>
+      <div>
+        <div class="bd-example">
+        <p class="display-1">Comment monter son propre PC</p>
+        <span style="font-size: 13px;">Benjamin Zamani <br> 
+        1 mars 2021
+      </span>
+      <br>
+      <br>
+      <br>
+        <span style="font-size: 20px; font-family: Arial; text-align:center;">
+        Vous avez acheté vos pièces d’ordinateurs ou êtes en train de les magasiner en ce moment et vous souhaitez apprendre à monter un ordinateur ? En suivant ce guide, vous allez pouvoir monter votre PC de A à Z! </span>
+        <br>
+        <br>
+        <br>
+        <span style="font-size: 40px; font-family: Arial;"><u>Avant de commencer</u></span>
+        <br>
+        <Br>
+        <span style="font-size: 20px; font-family: Arial;"><b>Où construire son ordinateur : </b></span>
+        <span style="font-size: 20px; font-family: Arial;">Tout d’abord, vous devez trouver un endroit où vous allez construire votre ordinateur. Il est recommandé de trouver un grand espace vide et plat, où vous serez confortable et où tout votre matériel sera à portée de main. L’endroit idéal serait une grande table, d’ailleurs c’est là que j’ai construit le mien. (Voir l’image ci-dessous)</span> <span style="font-size: 20px; font-family: Arial; color: red"><b>IMPORTANT!</b></span><span style="font-size: 20px; font-family: Arial; color: red"> – Ne placez pas vos pièces d’ordinateurs sur un tapis ou une surface métallique puisque l’électricité statique pourrait briser vos pièces.</span>
+        <br>
+        <br>
+        <span style="font-size: 20px; font-family: Arial;"><b>Temps à prévoir : </b></span><span style="font-size: 20px; font-family: Arial;">Si c’est l’une de vos premières fois que vous construisez un ordinateur, prévoyez de 2 à 4 heures de travail pour le monter. (Il est mieux de faire la construction en une journée afin de ne pas oublier où vous êtes rendu)</span>
+        <br>
+        <br>
+        <br>
+        <span style="font-size: 40px; font-family: Arial;"><u>Première étape : Processeur</u></span>
+        <br>
+        <Br>
+        <span style="font-size: 20px; font-family: Arial;">Dans tous les montages d’ordinateurs, il faut commencer par insérer le <u>processeur </u>dans la <u>carte-mère. </u>Cette étape peut faire peur puisque c’est celle où il faut faire le plus attention, mais c’est relativement simple. Soyez prudent, mais ne stressez pas. Commencez par sortir la carte-mère et placez-la sur votre table. Levez le couvercle de la cavité de placement du processeur. (Suivez les instructions qui viennent avec votre carte-mère) Ensuite, sortez votre processeur de sa boîte </span><span style="font-size: 20px; font-family: Arial; color: red;">(<b>IMPORTANT </b>- Ne touchez pas les petits trous ou les petites broches sur le processeur, car cela risque de l’abimer.)</span><span style="font-size: 20px; font-family: Arial;"> et insérez-le doucement dans la cavité de processeur sur votre carte-mère en alignant le petit triangle doré et l’endroit où il manque 2 broches du processeur à la cavité. Refermez ensuite la cavité du processeur en baissant le levier à sa position de départ. À noter qu’il faut retirer la pellicule en plastique s’il s’agit d’un processeur AMD. Pour un processeur Intel, la pellicule s'enlèvera elle-même.</span>
+        <br>
+        <br>
+        <br>
+        <span style="font-size: 40px; font-family: Arial;"><u>Deuxième étape : Mémoire vive</u></span>
+        <Br>
+        <br>
+        <span style="font-size: 20px; font-family: Arial;">Installer la mémoire vive, c’est simple. Tout d’abord, vous devez ouvrir/pousser les deux boutons sur les côtés des emplacements où sont insérés les bâtons de mémoire vive dans la carte-mère. Ensuite, analysez vos bâtons de mémoire vive et trouvez dans quel sens ils vont en regardant le trou qui se retrouve entre les petits bâtonnets dorés, il n'y en aura qu’un d’un seul côté. Alignez le bâton avec l’emplacement qui se situe sur la carte-mère et insérez-le doucement. Les boutons sur le côté vont se refermer seuls si tout est bien fait. Bien sûr, assurez-vous de jeter un coup d’oeil au manuel de la carte-mère pour savoir où se trouve l’emplacement pour insérer la mémoire vive. </span>
+        <br>
+        <Br>
+        <br>
+        <span style="font-size: 40px; font-family: Arial;"><u>Troisième étape : SSD M.2</u></span>
+        <br>
+        <br>
+        <span style="font-size: 20px; font-family: Arial;">Cette étape n’est pas pour tout le monde. En effet, seuls ceux qui ont un bâton SSD M.2 auront besoin de la faire. Pour installer cet item, vous allez d’abord dévisser la vis de maintien qui se situe à côté du connecteur de M.2 sur votre carte-mère. Une fois que cela est fait, vous n’avez qu’à insérer le M.2 dans le connecteur (Lisez le manuel de votre carte-mère pour savoir à quel angle l’insérer). Ensuite, tout en faisant attention, aplatissez le M.2 sur votre carte-mère, remettez la vis de maintien en place et vissez-la doucement. </span><span style="font-size: 20px; font-family: Arial; color: red;"><b>IMPORTANT </b>- Ne vissez pas trop fort, car cela risque de briser votre SSD M.2</span>
+        <br>
+        <br>
+        <br>
+        <span style="font-size: 40px; font-family: Arial;"><u>Quatrième étape : Ventilateur de processeur</u></span>
+        <br>
+        <br>
+        <span style="font-size: 20px; font-family: Arial;">Pour installer le ventilateur de votre processeur, que ce soit un ventilateur qui vient avec le processeur ou que vous aviez acheté à part, vous devez d’abord appliquer, si ce n’est pas déjà fait, l’équivalent d’un petit pois de pâte thermique sur le dos de votre processeur. Ensuite, pour installer le ventilateur vous allez devoir suivre le guide qui vient avec celui-ci, puisque les ventilateurs ne s’installent pas tous de la même façon. Finalement, vous n’avez qu’à brancher le câble du ventilateur au trou dans la carte-mère. (Lisez le manuel de la carte-mère pour savoir où il se trouve.)</span>
+        <br>
+        <br>
+        <br>
+        <span style="font-size: 40px; font-family: Arial;"><u>Cinquième étape : La carte-mère</u></span>
+        <br>
+        <br>
+        <span style="font-size: 20px; font-family: Arial;">Maintenant vient une autre étape importante ; vous devez insérer votre carte-mère sur laquelle sont insérés le processeur, le ventilateur, la mémoire vive et le SSD M.2* dans votre boîtier. Premièrement, couchez votre boîtier sur le côté et ouvrez le panneau latéral qui mène à l’entièreté de votre boîte. Deuxièmement, si ce ne l’est pas déjà fait, installez la petite plaque métallique qui délimite tous les ports externes de la carte-mère (ports audio, ports USB, etc) à l’arrière de votre boîtier. N’ayez pas peur d’utiliser un peu de force pour cela. Troisièmement, alignez les ports de votre carte-mère aux trous de ports que vous venez de placer sur votre boîtier. En faisant cela, votre carte-mère devrait être aligné avec les trous de vis situés à l’intérieur de votre boîtier. Quatrièmement, vissez tout cela en place en commençant par des coins opposés afin de réduire le mouvement de votre carte-mère. </span>
+        <br>
+        <br>
+        <br>
+        <span style="font-size: 40px; font-family: Arial;"><u>Sixième étape : Carte graphique</u></span>
+        <br>
+        <br>
+        <span style="font-size: 20px; font-family: Arial;">Pour installer la carte graphique, vous devez d’abord trouver le port PCI le plus accessible sur votre carte-mère. (Vérifier le manuel de la carte-mère) Ensuite, retirez la ou les caches à l’arrière de votre boîtier qui sont enlignés avec le port PCI. Puis, insérez votre carte graphique dans le port PCI en s’assurant que les ports HDMI, DVI ou VGA font face à l’extérieur du boîtier. Finalement, vissez la ou les vis nécessaires. (Vérifiez le manuel de la carte-mère pour savoir s’il y en a)</span>
+        <br>
+        <br>
+        <br>
+        <span style="font-size: 40px; font-family: Arial;"><u>Septième étape : Disque dur</u></span>
+        <br>
+        <br>
+        <span style="font-size: 20px; font-family: Arial;">Si vous avez un disque dur, ce n’est pas très difficile de l’installer. Vous devez tout d’abord trouver le support à disque dur sur votre carte-mère en lisant le manuel de la carte-mère et l’installer dessus. Ensuite, vissez le tout en place.</span>
+        <br>
+        <br>
+        <br>
+        <span style="font-size: 40px; font-family: Arial;"><u>Huitième étape : Bloc d'alimentation</u></span>
+        <br>
+        <br>
+        <span style="font-size: 20px; font-family: Arial;">Vous avez presque fini de monter votre ordinateur ! Il ne vous reste qu’à insérer le bloc d’alimentation dans l’arrière de votre boîtier et de brancher tous les câbles. Commencez par brancher le câble avec 24 broches à l’emplacement sur la carte-mère. Ensuite, branchez le câble à 8 broches au bon emplacement sur la carte-mère, puis branchez le câble SATA qui se branche au disque dur et finalement branchez le câble qui se relie à la carte graphique qui devrait avoir soit 6 ou 8 broches. (Vous allez trouver la fonction et l’allure de ces câbles dans le manuel du bloc d’alimentation)</span>
+        <br>
+        <br>
+        <br>
+        <span style="font-size: 40px; font-family: Arial;"><u>Neuvième étape : La fin</u></span>
+        <br>
+        <br>
+        <span style="font-size: 20px; font-family: Arial;">Branchez le bloc d’alimentation au mur et visitez nos guides qui portent sur les ventilateurs et sur l’installation du système d’opération de votre PC.</span>
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <br>
+        <p class="copyright text-muted">Copyright &copy; La ruche de la technologie</p>
